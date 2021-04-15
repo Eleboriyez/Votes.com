@@ -25,4 +25,16 @@ class VoteController extends Controller
         $vote = Vote::find($id);
         return view('show_vote', ['vote' => $vote]);
     }
+    public function increasePositive($id){
+        $vote = Vote::find($id);
+        $vote->positive++;
+        $vote->save();
+        return back();
+    }
+    public function increaseNegative($id){
+            $vote = Vote::find($id);
+            $vote->negative++;
+            $vote->save();
+            return back();
+        }
 }
