@@ -37,7 +37,7 @@
 					<a href="/"><i class="fa fa-home" aria-hidden="true"></i> Главная</a>
 				</li>
 				<li class="breadcrumb-item active" aria-current="page">
-					Уточек программистам
+					{{ $vote['title'] }}
 				</li>
 			</ol>
 		</div>
