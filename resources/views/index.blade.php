@@ -62,7 +62,7 @@
                 	</div>
                 </div>
             @endforeach
-
+            {{ $votes->onEachSide(2)->links() }}
 		</div>
 	</main>
 	<!-- КОНЕЦ: Основное содержимое страницы -->
